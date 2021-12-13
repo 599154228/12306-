@@ -76,9 +76,9 @@ class TrainSpider(object):
         # 显示等待
         WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.ID, "J-login")))
         # 输入登录账号
-        self.driver.find_element_by_id("J-userName").send_keys("13268369740")
+        self.driver.find_element_by_id("J-userName").send_keys("13456789012")
         # 输入登录密码
-        self.driver.find_element_by_id("J-password").send_keys("wxz1171055174")
+        self.driver.find_element_by_id("J-password").send_keys("wxz1234567890")
         # 点击立即登录
         login_button = self.driver.find_element_by_id("J-login")
         self.driver.execute_script('arguments[0].click();', login_button)
